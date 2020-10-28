@@ -54,13 +54,13 @@ If you feel that the requirements for submissions is beyond your current possibi
 The webserver can also be run in a Docker container. To do this, you first need to build the Docker image:
 
 ```bash
-docker build -t 96B_pinout .
+docker build -t pinout .
 ```
 
 Next, you can start the containerized webserver:
 
 ```bash
-docker run -p 5000:5000 -e PINOUT_LANG=en 96B_pinout
+docker run -p 5000:5000 -e PINOUT_LANG=en pinout
 ```
 
 Now you can access the webserver at http://127.0.0.1:5000/pinout/
